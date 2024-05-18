@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+
+    <style>
+
+        /* div:first-child{
+            background-color: red;
+        } */
+
+        :root{
+            --color:rgb(13, 13, 156);
+            --secolor:red;
+            --colorsec:yellow;
+            --defpaf:23px;
+            --defop:0.6;
+            --textcol:white;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            background-color:var(--color);
+        }
+
+        .container{
+            background-color:var(--secolor);
+            color: var(--textcol);
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--defpaf); /*padding through variable*/
+            border: 12px solid var(--colorsec);
+            opacity: var(--defop); /*Opecity through variable*/
+            color: var(--textcol);
+        }
+
+        ul li:first-child{
+            /* --color:yellow; */
+            background-color: var(--color ) ; /*  var(--color , blue ) Another option give if variable not found */
+        }
+
+        ul{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nostrum ipsum tenetur veritatis ea eveniet reiciendis hic
+         aspernatur quos aperiam temporibus asperiores magnam, in 
+         assumenda cumque. Accusantium nam quasi voluptatibus minima.
+    </div>
+</body>
+</html>

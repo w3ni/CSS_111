@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            background-color: skyblue;
+            height: 80vh;
+            width: 30vh;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            /* background-color: aqua; */
+
+/* 
+            animation-name: abhishekanimation;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-timing-function: cubic-bezier(0, 0, 0, 0.96);
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+
+            animation: abhishekanimation 5s ease-in 3s 1,
+                        veni 3s ease-in-out 3s 1;
+        }
+
+        @keyframes abhishekanimation{
+            from{
+                background-color: red;
+
+            }
+
+            to{
+                transform: translateX(1000px);
+                background-color: blue;
+            }
+        }
+
+        @keyframes veni {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(300deg);
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

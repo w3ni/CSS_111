@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     
+
+        .box::first-line{
+            color:green;
+        }
+
+        .boxes *{
+            border: 2px solid black;
+            color: blue;
+        }
+
+        [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        }
+
+        .box:nth-child(odd){
+            background-color: yellow;
+        }
+        .box:nth-child(2){
+        background-color: blue;
+       }
+       .box:nth-last-child(1){
+        background-color: red;
+       }
+
+       .boxes::before{
+        content: "Abhishek Kumar Verma";
+        color: blue;
+        background-color: yellow;
+        border: 2px solid black;
+       }
+
+       .boxes::selection{
+        color: aqua;
+        background-color: black;
+       }
+
+       /* .boxes::first-letter{
+        color:purple;
+       } */
+
+       /* input::placeholder{
+        color:red;
+       } */
+
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <div class="box" data-color="primary">Hey i am earum delecid id minima maxime ullam ab provident labore.</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+    </div>
+</body>
+</html>

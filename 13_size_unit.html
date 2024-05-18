@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS size UNIT</title>
+    <style>
+        .box1{
+            border: 2px solid rgb(0, 0, 0);
+            /* width: 1080px; */
+            width:80vw; 
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+         *{
+            margin: 0px;
+            padding: 0px;
+         }
+
+         .box2{
+            border: 2px solid rgb(0, 0, 0);
+            /* width: 1080px; */
+            width:80vw; /* viewport width , viewport height*/
+            height:10vh;
+            /*min-width: none; */
+            /* min-height: 80vh; */
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin:23px auto;
+            font-size: 12px;
+        }
+
+        .box2 p{
+            /* font-size: 1em; */
+            font-size: 1rem;
+        }
+
+        /* vmin and vmax another size unit for css */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        This is a box
+    </div>
+
+   <div class="box2">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque c
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos tempore m</p>  
+   </div>
+</body>
+</html>

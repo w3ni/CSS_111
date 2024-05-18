@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex box</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: flex;
+            height: 80vh;
+            flex-wrap: wrap;
+           
+            /* 
+             wrap-reverse
+             align-content: flex-start;  */
+            /* center*/
+            /* flex-flow: row wrap; ..........row wrap */
+            gap: 30px;
+
+            
+            /* align-items:center; */ /*column-reverse*/
+
+            /* justify-content:space-around; */
+
+            /* flex-direction: row;*/
+
+            /* There is no justify-content in css */
+            /* align-items use when we have one line and align-content use when we have multiple line when items wrap 
+            /* gap property use to give gap between items we can also set row and colum gap cutome like 
+            row-gap , column-gap  
+            row+colum = gap:4px 4px;*/
+        }
+
+        .item{
+            height: 62px;
+            width: 62px;
+            background-color: red;
+            border: 2px solid black;
+            padding: 10px;
+            flex-grow: 1;
+              /* margin: 4px;   */
+        }
+
+        /* order property apply only in items and use to give priorety using order property */
+        /* flex-grow */
+        /* flex-shrink */
+        /* align-self........particular item configuratiuon change */
+
+        /* .order-1{
+            order: 44;
+        }
+
+        .order-2{
+            order: 55;
+        }
+
+        .order-3{
+            order: 66;
+        }
+
+        .order-4{
+            order: 4;
+        } */
+
+        .item1{
+            flex-grow: 2;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1" class="order-3">1</div>
+        <div class="item" class="oeder-4">2</div>
+        <div class="item2" class="order-2">3</div>
+        <div class="item" class="order-1">4444</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+</body>
+</html>

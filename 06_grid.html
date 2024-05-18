@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            width: 80vw;
+            height: 50vh;
+            gap: 34px;
+            /* grid-template-columns: 120px 100px; */
+            /* grid-template-columns: [pehla] 120px [doosra} 100px; [teesra ] 330px */ 
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(5,1fr); */
+            /* grid-template-columns: repeat(4,minmax(100px, 1fr)); */
+            /*grid-template-columns: repeat(4, 80px);*/
+
+            /*place-content: center;*/
+
+            /* grid-template-rows: 100px 100px 100px; */
+
+            /* grid-template-areas: "nav nav nav"
+                                "side artical artical"
+                                "footer footer footer"; */
+
+            /* justify-items: center; */
+            /* align-items: center;
+            /*justify-items: start; */
+            /* row-gap , column-gap */
+            /* justify-content: center; */
+        }
+/*justify-content and align-content both center when we use place-content*/ 
+/* justify-item , align-item use regarding cell */
+/* align-content , justify-content use when container is big and grid small */
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;  
+        }
+
+
+/* 
+        .item-1{
+            grid-row: 1/2;
+             grid-column: 1/2;
+             grid-row-start: ;
+            grid-row-end: ; 
+            grid-area: nav; 
+            background-color:yellow; 
+        }
+
+        .item-2{
+
+            grid-area: side;
+            background-color: navy;
+
+
+            align-self: flex-start;
+            justify-self: end;
+
+        }
+
+        .item-3{
+            grid-area: artical;
+            background-color: skyblue;
+
+        }
+
+        .item-4{
+            grid-row: 1/3;
+            grid-column: 1/3; 
+             grid-colum:pehla/doosra
+             grid-area: footer;
+             background-color: green;
+        }
+
+        .item-5{
+            grid-area: nav; 
+            overlap item
+            background-color: blueviolet;
+        } */
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1 item">1</div>
+        <div class="item-2 item">2</div>
+        <div class="item-3 item">3</div>
+        <div class="item-4 item" >4</div>
+        <div class="item-5 item">5</div>
+    </div>
+</body>
+</html>
